@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO ===== -->
+  <title>Miguel Cojoc Caal | Portafolio — Desarrollo de Contenido Digital y Software</title>
+  <meta name="description" content="Portafolio de Miguel Angel Cojoc Caal. Estudio Desarrollo de Contenido Digital y Software, sé de front-end y de ventas. Vivo en Alta Verapaz, Guatemala.">
+  <meta name="author" content="Miguel Angel Cojoc Caal">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#07070d">
+
+  <!-- ===== Redes sociales ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_GT">
+  <meta property="og:title" content="Miguel Cojoc Caal | Portafolio">
+  <meta property="og:description" content="Estudio Desarrollo de Contenido Digital y Software. Sé de front-end, marketing y ventas.">
+  <meta property="og:author" content="Miguel Angel Cojoc Caal">
+
+  <!-- ===== Fuentes ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ===== Hoja de estilos ===== -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ===== Datos estructurados (Schema.org) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Miguel Angel Cojoc Caal",
+    "jobTitle": "Perito en Desarrollo de Contenido Digital y Software",
+    "email": "mailto:miguelcojoc221@gmail.com",
+    "telephone": "+502-3247-5182",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Pedro Carchá",
+      "addressRegion": "Alta Verapaz",
+      "addressCountry": "GT"
+    },
+    "alumniOf": "Instituto Técnico Diversificado de Bachillerato en Construcción",
+    "knowsLanguage": ["es"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Enlace para saltar al contenido (accesibilidad) -->
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <!-- Barra de progreso de lectura -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ===================== ENCABEZADO ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true">MC</span>
+        <span class="nav__logo-text">Miguel Cojoc<span class="nav__logo-dot">.</span></span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
+        <li class="nav__item"><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+        <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
+        <li class="nav__item"><a href="#formacion" class="nav__link">Formación</a></li>
+        <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+        <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
+        <li class="nav__item"><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__orb hero__orb--1"></span>
+        <span class="hero__orb hero__orb--2"></span>
+        <span class="hero__grid"></span>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__badge reveal">
+          <svg class="hero__badge-icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+          Hola, mi nombre es
+        </p>
+
+        <h1 class="hero__title reveal" id="hero-title">
+          Miguel Angel<br>
+          <span class="text-gradient">Cojoc Caal</span>
+        </h1>
+
+        <h2 class="hero__subtitle reveal">
+          Perito en Desarrollo de Contenido Digital y Software
+        </h2>
+
+        <p class="hero__description reveal">
+          Trabajando en ventas aprendí a tratar con la gente y a cerrar ventas.
+          Ahora estoy estudiando desarrollo de software y front-end, y me gustaría
+          dedicarme a crear cosas para internet.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="assets/docs/CV_Miguel_Cojoc_Caal.pdf" download class="btn btn--ghost">
+            <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descargar CV
+          </a>
+        </div>
+
+        <ul class="hero__meta reveal" aria-label="Datos de contacto rápidos">
+          <li>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            San Pedro Carchá, Alta Verapaz
+          </li>
+          <li>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            3247-5182
+          </li>
+          <li>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            miguelcojoc221@gmail.com
+          </li>
+        </ul>
+      </div>
+
+      <a href="#sobre-mi" class="hero__scroll" aria-label="Bajar a la sección Sobre mí">
+        <span aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__eyebrow">Conóceme</p>
+          <h2 class="section__title" id="sobre-mi-title">Sobre mí</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              Soy <strong>Miguel Cojoc Caal</strong>. Estudio
+              <strong>Desarrollo de Contenido Digital y Software</strong> en el Instituto
+              Técnico Diversificado de Bachillerato en Construcción y me quedé poco para
+              graduarme. También terminé el curso de <strong>Desarrollador Front-end</strong>
+              de la Fundación Carlos Slim.
+            </p>
+            <p>
+              Antes trabajé vendiendo celulares y ropa. Ahí aprendí a hablar con los
+              clientes, a resolver problemas rápido y a hacer publicidad. Ahora quiero
+              juntar todo eso con la tecnología.
+            </p>
+
+            <ul class="about__highlights">
+              <li class="about__highlight">
+                <span class="about__highlight-number" data-count="96">0</span>
+                <span class="about__highlight-label">horas aprendiendo front-end</span>
+              </li>
+              <li class="about__highlight">
+                <span class="about__highlight-number" data-count="4">0</span>
+                <span class="about__highlight-label">cursos terminados</span>
+              </li>
+              <li class="about__highlight">
+                <span class="about__highlight-number" data-count="2">0</span>
+                <span class="about__highlight-label">años vendiendo</span>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="about__card glass reveal" aria-label="Datos personales">
+            <h3 class="about__card-title">Mis datos</h3>
+            <dl class="about__card-list">
+              <div>
+                <dt>Nombre</dt>
+                <dd>Miguel Angel Cojoc Caal</dd>
+              </div>
+              <div>
+                <dt>Vivo en</dt>
+                <dd>San Pedro Carchá, Alta Verapaz</dd>
+              </div>
+              <div>
+                <dt>Teléfono</dt>
+                <dd><a href="tel:+50232475182">3247-5182</a></dd>
+              </div>
+              <div>
+                <dt>Correo</dt>
+                <dd><a href="mailto:miguelcojoc221@gmail.com">miguelcojoc221@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Idioma</dt>
+                <dd>Español</dd>
+              </div>
+            </dl>
+            <a href="assets/docs/CV_Miguel_Cojoc_Caal.pdf" download class="btn btn--primary btn--block">
+              Descargar CV (PDF)
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCIA ===================== -->
+    <section class="section section--alt" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__eyebrow">Dónde trabajé</p>
+          <h2 class="section__title" id="experiencia-title">Experiencia laboral</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <article class="timeline__card glass">
+              <div class="timeline__head">
+                <h3 class="timeline__role">Vendedor</h3>
+                <span class="timeline__date">Nov. 2024 — Mar. 2025</span>
+              </div>
+              <p class="timeline__company">Emmy Store · San Pedro Carchá</p>
+              <ul class="timeline__list">
+                <li>Vendía ropa y atendía a los clientes.</li>
+                <li>Limpiaba y ordenaba el local.</li>
+                <li>Hacía publicidad para atraer gente.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <article class="timeline__card glass">
+              <div class="timeline__head">
+                <h3 class="timeline__role">Vendedor</h3>
+                <span class="timeline__date">Nov. 2023 — Ene. 2024</span>
+              </div>
+              <p class="timeline__company">Comunicátel · Cobán</p>
+              <ul class="timeline__list">
+                <li>Vendía celulares.</li>
+                <li>Vendía recargas de Claro y Tigo.</li>
+                <li>Desbloqueaba celulares.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== FORMACIÓN ===================== -->
+    <section class="section" id="formacion" aria-labelledby="formacion-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__eyebrow">Mis estudios</p>
+          <h2 class="section__title" id="formacion-title">Formación</h2>
+        </header>
+
+        <div class="formacion__grid">
+          <!-- Escuelas -->
+          <div class="formacion__col reveal">
+            <h3 class="formacion__col-title">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>
+              Escuelas
+            </h3>
+
+            <ol class="timeline timeline--compact">
+              <li class="timeline__item reveal">
+                <div class="timeline__marker" aria-hidden="true"></div>
+                <article class="timeline__card glass">
+                  <div class="timeline__head">
+                    <h4 class="timeline__role">Perito en Desarrollo de Contenido Digital y Software</h4>
+                    <span class="timeline__date">2024 — 2026 · en curso</span>
+                  </div>
+                  <p class="timeline__company">Instituto Técnico Diversificado de Bachillerato en Construcción</p>
+                  <p class="timeline__place">Alta Verapaz, Guatemala</p>
+                </article>
+              </li>
+
+              <li class="timeline__item reveal">
+                <div class="timeline__marker" aria-hidden="true"></div>
+                <article class="timeline__card glass">
+                  <div class="timeline__head">
+                    <h4 class="timeline__role">Diploma del Ciclo Básico</h4>
+                    <span class="timeline__date">2020 — 2023</span>
+                  </div>
+                  <p class="timeline__company">Colegio Salesiano Don Bosco</p>
+                  <p class="timeline__place">Alta Verapaz, Guatemala</p>
+                </article>
+              </li>
+
+              <li class="timeline__item reveal">
+                <div class="timeline__marker" aria-hidden="true"></div>
+                <article class="timeline__card glass">
+                  <div class="timeline__head">
+                    <h4 class="timeline__role">Diploma de Sexto Primaria</h4>
+                    <span class="timeline__date">2014 — 2019</span>
+                  </div>
+                  <p class="timeline__company">Escuela Oficial Urbana de Varones "Adolfo Ferriere"</p>
+                  <p class="timeline__place">Alta Verapaz, Guatemala</p>
+                </article>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Cursos -->
+          <div class="formacion__col reveal">
+            <h3 class="formacion__col-title">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              Cursos
+            </h3>
+
+            <p class="formacion__source">Los hice en Capacítate para el Empleo, de la Fundación Carlos Slim.</p>
+
+            <ul class="courses">
+              <li class="course glass reveal">
+                <div class="course__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="course__body">
+                  <h4 class="course__name">Desarrollador Front-end</h4>
+                  <p class="course__meta">06 sept. 2024 · 96 horas</p>
+                </div>
+                <span class="course__badge">Certificado</span>
+              </li>
+
+              <li class="course glass reveal">
+                <div class="course__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <div class="course__body">
+                  <h4 class="course__name">Analista en mercadotecnia de motores de búsqueda (SEM)</h4>
+                  <p class="course__meta">13 nov. 2024 · 14 horas</p>
+                </div>
+                <span class="course__badge">Certificado</span>
+              </li>
+
+              <li class="course glass reveal">
+                <div class="course__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="course__body">
+                  <h4 class="course__name">Postprocesadores de estilo (CSS)</h4>
+                  <p class="course__meta">25 oct. 2024 · 13 horas</p>
+                </div>
+                <span class="course__badge">Certificado</span>
+              </li>
+
+              <li class="course glass reveal">
+                <div class="course__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div class="course__body">
+                  <h4 class="course__name">Autogestión</h4>
+                  <p class="course__meta">06 sept. 2024 · 5 horas</p>
+                </div>
+                <span class="course__badge">Certificado</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section class="section section--alt" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__eyebrow">Lo que sé hacer</p>
+          <h2 class="section__title" id="habilidades-title">Habilidades</h2>
+        </header>
+
+        <div class="skills">
+          <div class="skills__col reveal">
+            <h3 class="skills__title">Lo técnico</h3>
+
+            <div class="skill">
+              <div class="skill__head"><span>HTML5</span><span>90%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="90"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>CSS3 (que se vea bien en celular)</span><span>85%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="85"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>JavaScript</span><span>75%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="75"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Marketing digital y SEM</span><span>80%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="80"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Soporte técnico y sistemas</span><span>80%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="80"></span></div>
+            </div>
+          </div>
+
+          <div class="skills__col reveal">
+            <h3 class="skills__title">Lo que mejor se me da</h3>
+
+            <div class="skill">
+              <div class="skill__head"><span>Ventas y cierre de negocios</span><span>95%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="95"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Hablar y convencer</span><span>90%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="90"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Atender bien al cliente</span><span>92%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="92"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Hacer publicidad</span><span>85%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="85"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Trabajar en equipo y organizarme</span><span>88%</span></div>
+              <div class="skill__bar"><span class="skill__fill" data-level="88"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="tags reveal" aria-label="Conocimientos">
+          <li class="tag">HTML5</li>
+          <li class="tag">CSS3</li>
+          <li class="tag">JavaScript</li>
+          <li class="tag">Front-end</li>
+          <li class="tag">SEM</li>
+          <li class="tag">Publicidad</li>
+          <li class="tag">Ventas</li>
+          <li class="tag">Soporte técnico</li>
+          <li class="tag">Reparación de TV</li>
+          <li class="tag">Atención al cliente</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__eyebrow">Mis proyectos</p>
+          <h2 class="section__title" id="proyectos-title">Proyectos</h2>
+          <p class="section__subtitle">
+            <!-- EDITA AQUÍ: cambia cada tarjeta por tus proyectos de verdad -->
+            Estos son ejemplos que hice practicando HTML, CSS y JavaScript.
+          </p>
+        </header>
+
+        <div class="projects">
+          <article class="project glass reveal">
+            <div class="project__cover project__cover--1" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Página para un negocio local</h3>
+              <p class="project__description">
+                Una página sencilla con los servicios del negocio, fotos
+                y un botón para escribir por WhatsApp.
+              </p>
+              <ul class="project__stack">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive</li>
+              </ul>
+              <div class="project__links">
+                <a href="#" class="project__link">Ver demo</a>
+                <a href="#" class="project__link">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project__cover project__cover--2" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Catálogo de productos</h3>
+              <p class="project__description">
+                Productos organizados por categoría y un carrito que
+                guarda en el navegador lo que elegiste.
+              </p>
+              <ul class="project__stack">
+                <li>JavaScript</li>
+                <li>DOM</li>
+                <li>LocalStorage</li>
+              </ul>
+              <div class="project__links">
+                <a href="#" class="project__link">Ver demo</a>
+                <a href="#" class="project__link">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project__cover project__cover--3" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Panel de campañas SEM</h3>
+              <p class="project__description">
+                Un tablero para ver cómo van las campañas de Google:
+                clics, impresiones y cuánto cuesta cada clic.
+              </p>
+              <ul class="project__stack">
+                <li>JavaScript</li>
+                <li>Gráficas</li>
+                <li>SEM</li>
+              </ul>
+              <div class="project__links">
+                <a href="#" class="project__link">Ver demo</a>
+                <a href="#" class="project__link">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="section section--alt" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__eyebrow">Hablemos</p>
+          <h2 class="section__title" id="contacto-title">Contacto</h2>
+          <p class="section__subtitle">
+            ¿Tienes un trabajo o un proyecto para mí? Escríbeme y te contesto
+            lo más rápido que pueda.
+          </p>
+        </header>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <a href="mailto:miguelcojoc221@gmail.com" class="contact__item glass">
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span class="contact__text">
+                <span class="contact__label">Correo</span>
+                <span class="contact__value">miguelcojoc221@gmail.com</span>
+              </span>
+            </a>
+
+            <a href="tel:+50232475182" class="contact__item glass">
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <span class="contact__text">
+                <span class="contact__label">Teléfono</span>
+                <span class="contact__value">3247-5182</span>
+              </span>
+            </a>
+
+            <div class="contact__item glass">
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span class="contact__text">
+                <span class="contact__label">Ubicación</span>
+                <span class="contact__value">San Pedro Carchá, Alta Verapaz</span>
+              </span>
+            </div>
+          </div>
+
+          <form class="contact__form glass reveal" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Tu nombre" required>
+                <span class="form__error" data-error-for="name"></span>
+              </div>
+              <div class="form__field">
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required>
+                <span class="form__error" data-error-for="email"></span>
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" name="subject" placeholder="De qué quieres hablar" required>
+              <span class="form__error" data-error-for="subject"></span>
+            </div>
+
+            <div class="form__field">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              <span class="form__error" data-error-for="message"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">
+              Enviar mensaje
+              <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+
+            <p class="form__note" id="formNote" role="status" aria-live="polite">
+              Al enviar, se abrirá tu correo con el mensaje listo.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">
+        <span class="text-gradient">Miguel Cojoc Caal</span>
+      </p>
+      <p class="footer__copy">
+        © <span id="year">2026</span> · San Pedro Carchá, Alta Verapaz, Guatemala
+      </p>
+      <a href="#inicio" class="footer__top" aria-label="Volver al inicio">
+        Volver arriba
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante: volver arriba -->
+  <a href="#inicio" class="to-top" id="toTop" aria-label="Volver al inicio" hidden>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
