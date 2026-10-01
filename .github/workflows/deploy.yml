@@ -1,0 +1,42 @@
+# Esta acción publica mi portafolio en GitHub Pages cada vez que subo cambios
+name: Publicar portafolio en GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+# Permisos que necesita para publicar
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita que se publiquen dos cosas al mismo tiempo
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # Solo corre en mi repositorio del sitio personal
+    if: github.repository == 'miguelcojoc221-byte/miguelcojoc221-byte.github.io'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Preparar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir los archivos del sitio
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Publicar la página
+        id: deployment
+        uses: actions/deploy-pages@v4
